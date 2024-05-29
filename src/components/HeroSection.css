@@ -1,0 +1,100 @@
+/* HeroSection.css */
+
+.relative {
+    position: relative;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  .bg-dark {
+    background-color: #2b2b2b;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .h-full {
+    height: 100%;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+  
+  .opacity-50 {
+    opacity: 0.5; /* Darker overlay */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-6xl {
+    font-size: 4rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .bg-gradient-mesh {
+    background: linear-gradient(120deg, #DAA520, #c5c5c5, #d9e5e9, #DAA520);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .text-transparent {
+    color: transparent;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  /* Make video unclickable */
+  .video-bg {
+    pointer-events: none;
+  }
+  
