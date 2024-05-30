@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+body {
+  /* Other global styles */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+  color: #1a1a1a; /* Dark text color */
+}
+
+::selection {
+  background-color: rgba(218, 165, 32, 0.5); /* Transparent gold color */
+  color: #fff; /* White text color for contrast */
+}
+
+::-moz-selection {
+  background-color: rgba(218, 165, 32, 0.5); /* Transparent gold color for Firefox */
+  color: #fff; /* White text color for contrast */
+}

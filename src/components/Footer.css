@@ -1,0 +1,45 @@
+/* Footer.css */
+
+/* Add styles for the nav-link class used in the footer */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0.5rem 0; /* Adjust padding as needed */
+    font-weight: normal; /* Unbold the text */
+    font-size: 1rem; /* Same size as the rest of the text */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thicker underline */
+    bottom: 0; /* Position it directly under the text */
+    left: 0;
+    background-color: #DAA520; /* Tempered gold color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .nav-link:hover {
+    color: #DAA520; /* Tempered gold color */
+  }
+  
+  /* Style for general links */
+  .link {
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #DAA520; /* Tempered gold color */
+  }
+  

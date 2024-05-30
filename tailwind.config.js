@@ -9,8 +9,8 @@ module.exports = {
         light: '#f8f9fa', // Light color (off-white)
         indigo: '#4B0082', // Indigo
         gold: {
-          DEFAULT: '#FFD700', // Gold
-          gradient: 'linear-gradient(45deg, #FFD700, #FFAA00)', // Gold gradient
+          DEFAULT: '#DAA520', // Tempered gold color as the default
+          gradient: 'linear-gradient(45deg, #DAA520, #FFAA00)', // Gold gradient
         },
         silver: '#C0C0C0', // Silver
       },

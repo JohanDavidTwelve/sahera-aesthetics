@@ -1,18 +1,23 @@
 import React from 'react';
-import './index.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import ContentsSection from './components/ContentsSection';
-import Footer from './components/Footer';
+import HomePage from './components/HomePage';
+import Procedures from './components/Procedures';
+import Contact from './components/Contact';
+import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-light text-dark">
-      <Header />
-      <HeroSection />
-      <ContentsSection />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-light text-dark">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/procedures" element={<Procedures />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

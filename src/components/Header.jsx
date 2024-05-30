@@ -1,18 +1,19 @@
 import React from 'react';
-import './Header.css'; // Import the custom CSS
+import { Link } from 'react-router-dom';
+import './Header.css'; // Ensure this is correct
 
 const Header = () => {
   return (
-    <header className="bg-premium-dark text-white py-4 shadow-md">
+    <header className="bg-dark text-light py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#home" className="logo-link">
-          <img src="./images/Sahera_Aesthetics_LOGO_White.svg" alt="Сахера Естетикс" className="h-16 logo" />
-        </a>
+        <Link to="/">
+          <img src="./images/Sahera_Aesthetics_LOGO_White.svg" alt="Сахера Естетикс" className="h-16" />
+        </Link>
         <nav>
-          <ul className="flex space-x-8 text-lg font-bold">
-            <li><a href="#home" className="nav-link">Начало</a></li>
-            <li><a href="#procedures" className="nav-link">Процедури</a></li>
-            <li><a href="#contact" className="nav-link">Контакт</a></li>
+          <ul className="flex space-x-8 font-bold">
+            <li><Link to="/" className="nav-link">Начало</Link></li>
+            <li><Link to="/procedures" className="nav-link">Процедури</Link></li>
+            <li><Link to="/contact" className="nav-link">Контакт</Link></li>
           </ul>
         </nav>
       </div>
