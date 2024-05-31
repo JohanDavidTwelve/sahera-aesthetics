@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-light text-dark">
+      <div className="min-h-screen bg-light text-dark fallback-font">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

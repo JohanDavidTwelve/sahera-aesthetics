@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -33,18 +32,22 @@ const Footer = () => {
             <p>
               Facebook: <a href="https://www.facebook.com/people/Sahera-Aesthetics/61559260479030/" className="hover:text-gold transition duration-300" target="_blank" rel="noopener noreferrer">Sahera Aesthetics</a>
             </p>
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold mb-4">Работно време</h3>
+              <p>Понеделник - Петък: 9:00 - 19:00</p>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Меню</h3>
             <ul>
               <li className="mb-2">
-                <Link to="/" className="text-base hover:text-gold transition duration-300">Начало</Link>
+                <a href="/" className="text-base hover:text-gold transition duration-300">Начало</a>
               </li>
               <li className="mb-2">
-                <Link to="/procedures" className="text-base hover:text-gold transition duration-300">Процедури</Link>
+                <a href="/procedures" className="text-base hover:text-gold transition duration-300">Процедури</a>
               </li>
               <li className="mb-2">
-                <Link to="/contact" className="text-base hover:text-gold transition duration-300">Контакт</Link>
+                <a href="/contact" className="text-base hover:text-gold transition duration-300">Контакт</a>
               </li>
             </ul>
           </div>
